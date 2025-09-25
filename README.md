@@ -47,7 +47,8 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 ---
 
 ### 📝 Dataset Description 
-
+<details>
+<summary>📊 MIQD-2.5M Characteristics Summary</summary>
 
 | Task | Original Images | Source | Degradation Types | Severity Levels | Region Types | Object Categories | Degraded Images | Resolution Range |
 |------|-----------------|--------|-------------------|-----------------|--------------|-------------------|-----------------|------------------|
@@ -55,7 +56,10 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 | Object Detection & Instance Segmentation | 5,000 | MS COCO | 10 | 5 | 3 | 80 | 1,250,000 | 200×145 ~ 640×640 |
 | **Total** | **10,000** | **-** | **10** | **5** | **3** | **≥1,000** | **2,500,000** | **200×145 ~ 4288×2848** |
 
+</details>
 
+<details>
+<summary>📊 Summary of Degradation Regions, Distortion Intensity Levels, and Categories </summary>
 
 Each pair (x, y) represents ROI distortion intensity `x` and background distortion intensity `y`.
 <table>
@@ -142,6 +146,7 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
   </tbody>
 </table>
 
+</details>
 
 ---
 
@@ -162,8 +167,6 @@ You can **download either individual subsets** (e.g., classification, detection,
 ### 📂 Dataset Structure
 <details>
 <summary>Dataset Structure</summary>
-
-<sub> 
 
 ```
 MIQD_2.5M/
@@ -186,14 +189,15 @@ MIQD_2.5M/
 └── README.md
 
 ```
-</sub>
+
 </details>
 
 ### 🧪 Dataset Samples
+
 <details>
+
 <summary>Dataset Samples</summary>
 
-<sub> 
 <div align="center">
   <img src="./assets/examples.png" alt="Example Image" width="1400"/>
 </div>
@@ -206,7 +210,6 @@ along with the predicted <span style="color:#6495ED; font-weight:bold"> Consiste
 Panels (a)–(d), (e)–(g), and (h)–(j) present example images along with MIQA-related scores for image classification under UD, object detection under ROI-DD, and instance segmentation under BG-DD, respectively. Numbers in parentheses indicate distortion severity in ROI and background regions.
 Note: Lower LPIPS indicates higher perceptual quality, whereas higher values are preferred for other metrics.
 
-</sub>
 </details>
 
 ---
