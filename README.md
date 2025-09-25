@@ -34,7 +34,7 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 
 ## 📋 Database Construction Pipeline
 <div align="center">
-  <img src="./assets/database.bmp" alt="Example Image" width="1400"/>
+  <img src="./assets/database.png" alt="Example Image" width="1400"/>
 </div>
 
 ## ✨ Database Highlights
@@ -47,24 +47,17 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 ---
 
 ### 📝 Dataset Description 
-<details open>
-<summary>📊 MIQD-2.5M Characteristics Summary</summary>
 
-<sub> 
 
 | Task | Original Images | Source | Degradation Types | Severity Levels | Region Types | Object Categories | Degraded Images | Resolution Range |
 |------|-----------------|--------|-------------------|-----------------|--------------|-------------------|-----------------|------------------|
 | Image Classification | 5,000 | ImageNet | 10 | 5 | 3 | 1,000 | 1,250,000 | 262×415 ~ 4288×2848 |
 | Object Detection & Instance Segmentation | 5,000 | MS COCO | 10 | 5 | 3 | 80 | 1,250,000 | 200×145 ~ 640×640 |
 | **Total** | **10,000** | **-** | **10** | **5** | **3** | **≥1,000** | **2,500,000** | **200×145 ~ 4288×2848** |
-</sub>
-</details> 
 
-<details >
-<summary>📊 Summary of Degradation Regions, Distortion Intensity Levels, and Categories  </summary>
 
-<sub>
-Each pair **(x, y)** represents ROI distortion intensity `x` and background distortion intensity `y`.
+
+Each pair (x, y) represents ROI distortion intensity `x` and background distortion intensity `y`.
 <table>
   <thead>
     <tr>
@@ -148,8 +141,7 @@ Each pair **(x, y)** represents ROI distortion intensity `x` and background dist
     </tr>
   </tbody>
 </table>
-</sub>
-</details> 
+
 
 ---
 
