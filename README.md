@@ -239,15 +239,16 @@ For questions and feedback:
 <details>
 <summary>License and Terms of Use</summary>
 
-<sub>
+**License:** This project is released under the MIT License.
 
-- License: This project is released under the [MIT License]. See the LICENSE file for details.
-- Academic Use Only: The dataset is released solely for non-commercial research and educational purposes.
-- Data Sources Disclaimer: All source images originate from publicly available datasets, and copyright remains with the original owners.
-- Citation Requirement: Users must cite the associated paper(s) when using the dataset in publications.
-- Responsibility: Users are fully responsible for compliance with local laws and ethical standards when using the dataset.
+**Academic Use Only:** Non-commercial research and educational purposes only.
 
-</sub>
+**Citation Required:** Users must cite the associated paper in all publications.
+
+**Source Attribution:** All images derive from publicly available datasets (ImageNet, MS COCO). Original copyrights remain with respective owners.
+
+**User Responsibility:** Comply with applicable laws and ethical standards. No harmful or discriminatory use.
+
 </details>
  
 ---
