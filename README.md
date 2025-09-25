@@ -155,6 +155,7 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
 | MIQD-2.5M Subset2 |   object detection    | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | - | ~600 GB |
 | MIQD-2.5M Subset3 | instance segmentation | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | - | ~700 GB |
 | <span style="color:red">**MIQD-2.5M (Full)**</span> | <span style="color:red">**All Tasks**</span> | - | - | - | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](全集链接) / [Baidu Pan](全集链接) | **~2.1 TB** |
+
 **📌 Notes:**  
 You can **download either individual subsets** (e.g., classification, detection, segmentation) or **the complete dataset**. We provide multiple hosting options (**Google Drive** and **Baidu Pan**) to ensure stable access.
 
