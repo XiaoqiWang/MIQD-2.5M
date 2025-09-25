@@ -47,7 +47,7 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 ---
 
 ### 📝 Dataset Description 
-<details>
+<details open>
 <summary>📊 MIQD-2.5M Characteristics Summary</summary>
 
 | Task | Original Images | Source | Degradation Types | Severity Levels | Region Types | Object Categories | Degraded Images | Resolution Range |
@@ -256,6 +256,6 @@ For questions and feedback:
  
 ---
 
-<div align="center">
+<div align="right">
   <sub>Built with ❤️ by [Xiaoqi Wang]</sub>
 </div>
