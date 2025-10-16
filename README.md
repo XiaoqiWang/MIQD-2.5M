@@ -162,7 +162,7 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
 
 **📌 Notes:**  
 You can **download either individual subsets** (e.g., classification, detection, segmentation) or **the complete **MIQD-2.5M** database**.
-MIQD-2.5M Subset3 (instance segmentation) subset (shares **image data** with MIQD-2.5M Subset2 (object detection), both derived from MS COCO)
+The MIQD-2.5M Subset3 (instance segmentation) shares its image data with Subset2 (object detection), as both are derived from the MS COCO dataset.
 ### 📂 Dataset Structure
 <details>
 <summary>Database Structure</summary>
