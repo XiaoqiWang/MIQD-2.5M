@@ -19,9 +19,9 @@
 <p align="center" style="color:gray; margin-bottom:0.01em; font-size:1.2em">
 This repository provides the database for the paper:
 </p>
-<h2 align="center" style="margin-top:0.01em;">
+<h3 align="center" style="margin-top:0.01em;">
 Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Models
-</h2>
+</h3>
 
 *Xiaoqi Wang, Yun Zhang, Weisi Lin*  
 
@@ -43,10 +43,10 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 - **Region-aware degradation**: Introduces spatial degradation patterns (uniform, ROI-dominated, and background-dominated) to simulate real-world quality variations.
 - **Comprehensive degradation**: 10 distortion types across 4 categories (digital, blur, environmental, noise) with 5 severity levels each.
 - **Multi-task evaluation**: Covering three representative vision tasks (image classification, object detection, and instance segmentation) with a total of 75 diverse models.
-- **Quality labels**: Machine vision quality is evaluated by consistency (prediction stability), accuracy (task performance), and their integrated composite metric.
+- **Quality labels (MMOS)**: Machine vision quality is evaluated by consistency (prediction stability), accuracy (task performance), and their integrated composite metric.
 ---
 
-### 📝 Dataset Description 
+### 📝 Database Description 
 <details open>
 <summary>📊 MIQD-2.5M Characteristics Summary</summary>
 
@@ -150,40 +150,59 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
 
 ---
 
-## 📥 Download
-**The full dataset (MIQD-2.5M) will be released publicly in the near future.** Please stay tuned for updates.  
+## 📥 Download Links
 ### 🔗 Download Links
 
-|    **Dataset**    |       **Task**        |              **Images**               | **Labels** | **Additional Info** | **Original Images** | **Full Dataset** | **Size** |
-|:-----------------:|:---------------------:|:-------------------------------------:|:----------:|:-------------------:|:-------------------:|:----------------:|:--------:|
-| MIQD-2.5M Subset1 | image classification  | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | - | ~800 GB |
-| MIQD-2.5M Subset2 |   object detection    | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | - | ~600 GB |
-| MIQD-2.5M Subset3 | instance segmentation | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](链接) / [Baidu Pan](链接) | - | ~700 GB |
-| <span style="color:red">**MIQD-2.5M (Full)**</span> | <span style="color:red">**All Tasks**</span> | - | - | - | [Google Drive](链接) / [Baidu Pan](链接) | [Google Drive](全集链接) / [Baidu Pan](全集链接) | **~2.1 TB** |
+|                    **Database**                     |               **Vision Task**                |                                      **Images**                                      |                                     **Labels**                                      |                  **Additional Info**                  |                  **Original Images**                   |                    **Full Database**                     |       **Size**        |
+|:---------------------------------------------------:|:--------------------------------------------:|:------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:-----------------------------------------------------:|:------------------------------------------------------:|:--------------------------------------------------------:|:---------------------:|
+|                  MIQD-2.5M Subset1                  |             image classification             |                [Quark](https://pan.quark.cn/s/7a73d291916c?pwd=YbkN)                 |                [Quark](https://pan.quark.cn/s/a25974888815?pwd=fhFA)                | [Quark](https://pan.quark.cn/s/ee5ebe92ef60?pwd=LnQA) | [Quark](https://pan.quark.cn/s/c80d65234c08?pwd=vKrS)  |  [Quark](https://pan.quark.cn/s/6bb6858b82c6?pwd=pMrw)   |        ~458 GB        |
+|                  MIQD-2.5M Subset2                  |               object detection               |                [Quark](https://pan.quark.cn/s/10fa155b893f?pwd=Gq3X)                 |                [Quark](https://pan.quark.cn/s/dbea86b84464?pwd=12Xz)                | [Quark](https://pan.quark.cn/s/07362eb4edd7?pwd=dKy4) | [Quark](https://pan.quark.cn/s/9526158abaf4?pwd=A9Ud)  |  [Quark](https://pan.quark.cn/s/9de83a862deb?pwd=4n7U)   |        ~480 GB        |
+|                  MIQD-2.5M Subset3                  |            instance segmentation             |                                   Same as Subset2                                    |                [Quark](https://pan.quark.cn/s/d6290cd0ef1c?pwd=JTfz)                |                           Same as Subset2                          |                           Same as Subset2                            |                            -                             | ~227.3MB (Label only) |
+| <span style="color:red">**MIQD-2.5M (Full)**</span> | <span style="color:red">**All Tasks**</span> | -|        -| -| -|                        [Quark](https://pan.quark.cn/s/34ab8b196851?pwd=nd6t) |                     **~916.2GB**                      |
 
 **📌 Notes:**  
-You can **download either individual subsets** (e.g., classification, detection, segmentation) or **the complete dataset**. We provide multiple hosting options (**Google Drive** and **Baidu Pan**) to ensure stable access.
-
+You can **download either individual subsets** (e.g., classification, detection, segmentation) or **the complete **MIQD-2.5M** database**.
+MIQD-2.5M Subset3 (instance segmentation) subset (shares **image data** with MIQD-2.5M Subset2 (object detection), both derived from MS COCO)
 ### 📂 Dataset Structure
 <details>
-<summary>Dataset Structure</summary>
+<summary>Database Structure</summary>
 
 ```
 MIQD_2.5M/
-├── miqd_cls/                        # Image classification subset
+├── miqa_cls/                        # Image classification subset
 │   ├── images/                      
-│   │   ├── folder1/
-│   │   ├── folder2/
+│   │   ├── ILSVRC2012_val_00000012/
+│   │   │   └──ILSVRC2012_val_00000012_contrast_1.png
+│   │   │   └──ILSVRC2012_val_00000012_contrast_2.png
+│   │   │   └──...
+│   │   ├── ILSVRC2012_val_00000023/
 │   │   └── ...
 │   ├── labels/                     
-│   │   └── cls_labels.csv
-│   └── metadata/                    
-│       └── cls_info.json
+│   │   └── ILSVRC2012_val_00000012_mmos.csv
+│   │   └── ILSVRC2012_val_00000023_mmos.csv    
+│   │   └── ...
+│   ├──src_images/ 
+│   │    └── ILSVRC2012_val_00000012.JPEG
+│   │    └── ...               
+│   └── additional_info/ 
 │
-├── miqd_det/                        # Object detection subset
-.......
+├── miqa_det/                        # Object detection subset
+│   ├── images/                      
+│   │   ├── 000000000139/
+│   │   │   └── 000000000139_contrast_1.png
+│   │   │   └── ...
+│   │   ├── 000000000285/
+│   │   └── ...
+│   ├── labels/                     
+│   │   └── 000000000139_accuracy.csv
+│   │   └── 000000000139_consistency.csv    
+│   │   └── ...
+│   ├──src_images/ 
+│   │    └── 000000000139.jpg
+│   │    └── ...               
+│   └── additional_info/         
 │
-├── miqd_ins/                        # Instance segmentation subset
+├── miqa_ins/                        # Instance segmentation subset
  ......
 │
 └── README.md
@@ -192,11 +211,11 @@ MIQD_2.5M/
 
 </details>
 
-### 🧪 Dataset Samples
+### 🧪 Database Examples
 
 <details>
 
-<summary>Dataset Samples</summary>
+<summary>Database Examples</summary>
 
 <div align="center">
   <img src="./assets/examples.png" alt="Example Image" width="1400"/>
