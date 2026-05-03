@@ -25,7 +25,7 @@ Image Quality Assessment for Machines: Paradigm, Large-scale Database, and Model
 
 *Xiaoqi Wang, Yun Zhang, Weisi Lin*  
 
-[📖 Paper](https://arxiv.org/abs/2508.19850) | [🗃️ Dataset](https://github.com/XiaoqiWang/MIQD-2.5M) | [👨‍💻 Code](https://github.com/XiaoqiWang/MIQA) | [🤗 HuggingFace](https://huggingface.co/)  
+[📖 Paper](https://arxiv.org/abs/2508.19850) | [🗃️ Dataset](https://github.com/XiaoqiWang/MIQD-2.5M) | [👨‍💻 Code](https://github.com/XiaoqiWang/MIQA) | [🤗 HuggingFace](https://huggingface.co/datasets/xiaoqi-wang/miqd-2.5m)  
 
 </div>
 
@@ -151,7 +151,16 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
 ---
 
 ## 📥 Download Links
-### 🔗 Download Links
+### Method 1: Download via Hugging Face
+
+* 📦 Dataset page: [https://huggingface.co/datasets/xiaoqi-wang/miqd-2.5m](https://huggingface.co/datasets/xiaoqi-wang/miqd-2.5m)
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("xiaoqi-wang/miqd-2.5m")
+```
+### Method 2: Download via Quark Drive
 
 |                    **Database**                     |               **Vision Task**                |                                      **Images**                                      |                                     **Labels**                                      |                  **Additional Info**                  |                  **Original Images**                   |                    **Full Database**                     |       **Size**        |
 |:---------------------------------------------------:|:--------------------------------------------:|:------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:-----------------------------------------------------:|:------------------------------------------------------:|:--------------------------------------------------------:|:---------------------:|
@@ -163,6 +172,7 @@ Each pair (x, y) represents ROI distortion intensity `x` and background distorti
 **📌 Notes:**  
 You can **download either individual subsets** (e.g., classification, detection, segmentation) or **the complete **MIQD-2.5M** database**.
 The MIQD-2.5M Subset3 (instance segmentation) shares its image data with Subset2 (object detection), as both are derived from the MS COCO dataset.
+
 ### 📂 Dataset Structure
 <details>
 <summary>Database Structure</summary>
