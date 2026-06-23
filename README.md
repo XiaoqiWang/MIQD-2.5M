@@ -242,6 +242,14 @@ Note: Lower LPIPS indicates higher perceptual quality, whereas higher values are
 </details>
 
 ---
+## Dataset Generation Code
+
+We have added the `generate_dataset/` folder, which contains the full pipeline for data construction, including:
+- Image distortion generation (`distortions/`)
+- Data information processing (`data_info/`)
+- Dataset construction pipeline (`pipeline/`)
+---
+
 
 ## 📚 Citation
 
