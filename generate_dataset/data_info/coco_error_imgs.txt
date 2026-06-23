@@ -1,0 +1,4 @@
+# Invalid size of the input images, expected at least 161x161.
+000000293044
+000000298251
+000000149770
